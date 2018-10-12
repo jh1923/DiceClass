@@ -1,0 +1,20 @@
+
+public class DiceMain 
+{
+
+	public static void main(String[] args)
+	{
+		DiceClass dice = new DiceClass();
+		{
+			int roll1 = 0;
+			int roll2 = 1;
+			while (roll1 != roll2)
+			{
+				roll1 = dice.rollDice();
+				roll2 = dice.rollDice();
+				System.out.println("First Roll: " + roll1 + "\nSecond Roll: " + roll2 + "\nSum: " + (roll1 + roll2) + "\n");
+			}
+			System.out.println("It took " + dice.getNumRolls() + " rolls for you to get double " + roll1);
+		}
+	}
+}
