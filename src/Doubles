@@ -1,0 +1,19 @@
+public class Doubles 
+{
+
+	public static void main(String[] args)
+	{
+		DiceClass dice1 = new DiceClass();
+		DiceClass dice2 = new DiceClass();
+		int roll1 = 0;
+		int roll2 = 1;
+		
+		while (roll1 != roll2)
+		{
+			roll1 = dice1.rollDice();
+			roll2 = dice2.rollDice();
+			System.out.println("Die 1: " + roll1 + "\nDie 2: " + roll2 + "\nSum: " + (roll1 + roll2) + "\n");
+		}
+		System.out.println("It took " + dice1.getNumRolls() + " tries for you to get a double of " + roll1 + ".");
+	}
+}
