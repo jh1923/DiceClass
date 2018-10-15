@@ -18,7 +18,13 @@ public class DiceClass
 	//Methods
 	public int rollDice()
 	{
+		
+		numRolls++;
 		return (int)(Math.random()*6)+1;
 	}
 	
+	public int getNumRolls()
+	{
+		return numRolls;
+	}
 }
